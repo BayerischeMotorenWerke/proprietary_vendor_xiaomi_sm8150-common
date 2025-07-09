@@ -479,7 +479,6 @@ PRODUCT_PACKAGES += \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
     com.qualcomm.qti.ant@1.0 \
-    com.qualcomm.qti.wifidisplayhal@1.0 \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
@@ -601,8 +600,10 @@ PRODUCT_PACKAGES += \
     xtwifi-client \
     xtwifi-inet-agent \
     dpmd \
-    wfdservice \
-    wfdservice64
+    wfdservice 
+
+PRODUCT_PACKAGES += \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
